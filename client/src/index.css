@@ -1,0 +1,212 @@
+@import "tailwindcss";
+@theme {
+  --color-primary: rgb(231, 116, 146);
+}
+*{margin: 0px;padding: 0px;box-sizing: border-box;}
+body{
+    font-optical-sizing: auto;
+    color: rgba(36,36,36,1);
+    overflow-x:hidden !important;
+    background: #f5f0f0;
+}
+p{font-size: 14px; line-height: 25px; margin-bottom: 10px; margin-top: 10px;}
+h1,h2,h3,h4,h5,h6{
+    font-weight: 600;
+}
+header{
+    background-color: white;
+}
+::-webkit-scrollbar{
+    width:8px !important; height: 8px !important;
+}
+::-webkit-scrollbar-thumb{ background-color: rgb(231, 116, 146) !important;}
+::-webkit-scrollbar-track{ background-color: white;}
+.overflow-x-auto::-webkit-scrollbar-thumb{ background-color: #ccc !important;}
+.container{
+    width: 95%  ;margin: auto !important; 
+}
+.link:hover{
+    color: rgb(231, 116, 146) !important;
+
+}
+.MuiBadge-badge{
+    background-color:rgb(231, 116, 146) !important;
+}
+.btn-org{
+     background-color:rgb(231, 116, 146) !important; color: #fff !important;font-weight: 500;
+     font-size: 16px;padding: 7px 20px !important;
+}
+.btn-org:hover{background: #171717!important;}
+.btn-org.btn-border{background: none !important;color: rgb(231, 116, 146) !important;
+border: 1px solid rgb(231, 116, 146) !important;font-weight: 500;font-size: 16px;padding: 7px 20px !important;}
+.btn-org.btn-border:hover{background: #171717!important;color: #fff !important;
+border: 1px solid #171717 !important;}
+.btn-lg{
+       font-size: 18px;padding: 10px 20px !important;
+}
+ 
+.btn-sm{font-size: 12px !important;padding: 5px 20px !important;}
+.DefileImg{ overflow: hidden !important;}
+.swiper-button-prev,.swiper-button-next{
+    display: flex; align-items: center;justify-content: center;background-color: #fff; border-radius: 100%; width: 30px;
+    height: 30px; min-width: 30px; box-shadow: 0 1px #0000001f,0 1px 2px #0000003d!important;
+    color: #000 !important; font-size: 10px !important;
+    padding: 7px;
+}
+.swiper-button-prev:after,.swiper-button-next:after{
+    font-size: 22px !important; color: #000;
+}
+.swiper-button-prev:hover,.swiper-button-next:hover{
+   background-color: rgb(231, 116, 146) !important;
+}
+.cateSwip{ overflow: inherit !important;}
+.cateSwip .swiper-button-prev,.cateSwip .swiper-button-next{
+    background-color: #fff; width: 30px;
+    height: 30px; min-width: 30px;
+}
+.cateSwip .swiper-button-prev:after,.cateSwip .swiper-button-next:after{
+     font-size: 16px !important; color: #000;
+}
+.cateSwip .swiper-button-prev{ left: -10px !important;}
+.cateSwip .swiper-button-next{right: -10px !important;}
+.cateSwip .items{border: 1px solid rgba(0,0,0,0.1)}
+.cateSwip .swiper-button-prev:hover,.cateSwip .swiper-button-next:hover{
+     background-color: rgb(231, 116, 146) !important;
+}
+.cateSwip .swiper-button-prev:hover::after,.cateSwip .swiper-button-next:hover::after{
+    color: #fff!important;
+}
+.cateSwip .items:hover img {
+         transform: scale(1.1);
+}
+.img{
+    padding-top: 9px !important;
+}
+.smlBtn .swiper-button-prev,.smlBtn .swiper-button-next{
+ width: 30px;
+    height: 30px; min-width: 30px;display: flex; align-items: center;justify-content: center !important;
+}
+.smlBtn .swiper-button-prev:after,.smlBtn .swiper-button-next:after{
+ font-size: 18px !important; color: #000;   
+}
+.MuiTabs-indicator{
+    background-color: rgb(231, 116, 146) !important;
+}
+.MuiTab-textColorPrimary.Mui-selected{
+    color:rgb(231, 116, 146) !important;
+}
+.ProduitDefile .swiper-wrapper{padding: 15px; margin-left:-15px ;
+margin-right:-15px ;
+}
+.footer form input::placeholder{ font-size: 14px;}
+.css-vuhw6e-MuiButtonBase-root-MuiSwitchBase-root-MuiCheckbox-root.Mui-checked{
+    color:rgb(231, 116, 146) !important;
+}
+.MuiFormControlLabel-label{
+    font-size: 13px !important; color: rgba(0,0,0,0.8);
+}
+.swiper-pagination-bullet-active{
+    background: rgb(231, 116, 146) !important;
+
+}
+.BanniereV2{overflow: hidden !important;}
+.BanniereV2 .swiper-slide-active .info{right: 0px !important; opacity: 1;}
+.BanniereV2 .swiper-slide-active .info h4{ right: 0px !important; opacity: 1;}
+.BanniereV2 .swiper-slide-active .info h3{ right: 0px !important; opacity: 1;}
+.BanniereV2 .swiper-slide-active .info h2{right: 0px !important; opacity: 1;}
+.BanniereV2 .swiper-slide-active .info .btn_{right: 0px !important; opacity: 1;}
+.BanniereV2 .info h4{transition-duration: 1.2s;}
+.BanniereV2 .info h2{transition-duration: 1.5s;}
+.BanniereV2 .info h3{transition-duration: 1.8s;}
+.BanniereV2 .info .btn_{transition-duration: 2.1s;}
+.MuiCheckbox-root{
+    padding:6px !important;
+}
+.ReactCollapse--collapse {
+  transition: height 400ms;
+}
+.itemViewActions button.active svg{
+    color: rgb(231, 116, 146) !important; opacity: 1 !important;
+}
+.Mui-selected.MuiPaginationItem-page{background:rgb(231, 116, 146) !important ; color: #fff !important;}
+.shadow-md,.shadow-lg{box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24) !important;}
+
+.zoomProductSliderThumbs .swiper-button-prev,
+.zoomProductSliderThumbs .swiper-button-next{
+    width: 100% !important;
+    height: 30px !important;
+    border-radius: 0px !important;
+    left: 0 !important;
+    right: 0 !important;
+}
+.zoomProductSliderThumbs .swiper-button-prev{
+    top: 0 !important;
+}
+.zoomProductSliderThumbs .swiper-button-next{
+    bottom: 0 !important;
+    top: auto !important;
+}
+.zoomProductSliderThumbs .swiper-button-prev:after,
+.zoomProductSliderThumbs .swiper-button-next:after{
+    transform: rotate(90deg);
+}
+.zoomProductSliderThumbs {
+    padding-top: 30px !important;
+    padding-bottom: 30px !important;
+}
+.zoomProductSliderThumbs .swiper-wrapper{padding-top: 38px !important;}
+.productContent .actions button{ min-width: 40px !important; height:30px !important ;
+    border: 1px solid rgba(0,0,0,0.1) !important; color: rgba(0,0,0,0.7);}
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    -moz-appearance:none;
+    appearance: none;
+    margin: 0;
+}
+.reviewScroll::-webkit-scrollbar{width: 5px !important;}
+.reviewScroll::-webkit-scrollbar-thumb{background:rgb(231, 116, 146) !important;}
+.ProductDetailsModal .MuiDialogContent-root{padding: 0px !important;}
+.cartPanel .MuiPaper-root{ width: 350px !important; overflow: hidden;}
+#size-menu .MuiButtonBse-root{font-size: 12px !important;}
+.otpBox input{border: 1px solid rgba(0,0,0,0.3) !important; outline: none !important; border-radius: 4px !important;}
+.otpBox input:focus{border: 1px solid rgba(0,0,0,0.7) !important;}
+.section .cont{height: 90hv; display:flex;}
+.scroll::-webkit-scrollbar{width: 5px !important ;}
+.scroll::-webkit-scrollbar-thumb{background:#ccc !important ;}
+
+#account-menu .MuiPaper-root{width: 200px !important;}
+
+.myAccountTabs li a{position: relative;display: block;}
+.myAccountTabs li a:before{ content: "";width: 3px; height: 50%; position: absolute;
+    top:50%;left: 0px; background:rgb(231, 116, 146) ; 
+     transition: all 0.3 ease-in-out; opacity: 0;}
+ .myAccountTabs li a.active::before{height: 100%;opacity: 1; top:0px;}
+ .myAccountTabs li a.active button svg{color: rgb(231, 116, 146) !important;opacity: 1 !important; }
+ button .MuiCircularProgress-root{width: 30px !important; height: 30px !important;}
+ 
+.react-international-phone-input{width: 100% !important;}
+.react-international-phone-country-selector-button{width: 55px !important;}
+.react-international-phone-input-container{border: 1px solid rgba(0,0,0,0.1) !important;}
+.MuiDialog-paper{width: 700px !important;max-width: 700px !important;}
+/* rotation des icônes 
+.ProduitDefile .swiper,.blogSection 
+.zoomProductSliderThumbs .swiper-slide{
+    height: auto !important;
+}
+    .iiz{border-radius: 10px !important;}
+.zoomProductSliderThumbs .swiper-button-next{
+    bottom: 0px !important; right: inherit !important;top: inherit !important;
+    width: 100% !important;height: 30px !important;border-radius: 0px !important;
+}
+.zoomProductSliderThumbs .swiper-button-next:after{
+    transform: rotate(90deg);
+}
+.zoomProductSliderThumbs .swiper-button-prev{
+    left: 0px !important;top: 20px !important;
+    width: 100% !important;height: 30px !important;border-radius: 0px !important;
+}
+.zoomProductSliderThumbs .swiper-button-prev:after{
+    transform: rotate(90deg);
+}
+    */

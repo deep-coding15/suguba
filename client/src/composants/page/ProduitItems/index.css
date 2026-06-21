@@ -1,0 +1,5 @@
+.ProduitItems .descrip{
+    line-height: 18px;
+}
+.ProduitItems .actons button:hover svg{color: #fff !important;}
+.ProduitItems .actons button svg{pointer-events:none !important;}

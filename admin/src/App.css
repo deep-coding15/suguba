@@ -1,0 +1,42 @@
+@import "tailwindcss";
+body{
+    font-optical-sizing: auto;
+    color: rgba(36,36,36,1);
+    overflow-x:hidden !important;
+    background: #f5f0f0;
+}
+.MuiBadge-badge {background:rgb(132, 132, 31) !important ;}
+.ReactCollapse--collapse {
+  transition: height 300ms;
+}
+::-webkit-scrollbar{width: 10px !important; height: 10px !important;}
+::-webkit-scrollbar-thumb{background: #ccc !important;}
+.btn{padding: 8px 20px !important;}
+.btn svg{font-size: 20px !important;}
+.btn-pink{background:  rgb(132, 132, 31) !important ; color: #fff !important;padding: 8px 20px !important;
+}
+.btn-pink:hover{background: rgb(76, 76, 31) !important;}
+.btn-sm{ padding: 6px 20px !important;font-size: 13px !important;}
+.btn-lg{padding: 8px 20px !important;font-size: 16px !important;}
+th.MuiTableCell-root{ background: #f1f1f1; padding-bottom: 1px; padding-top: 1px;}
+a.active button {background: #e8e8e8 !important;}
+.MuiButton-icon svg{font-size: 27px !important;}
+.css-rizt0-MuiTypography-root{font-size: 14px !important;}
+.MuiAppBar-colorPrimary{background: #e6e6e6 !important
+  ;}
+  input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    -moz-appearance:none;
+    appearance: none;
+    margin: 0;
+}
+.MuiSelect-select{background: #fff !important;}
+.otpBox input{border: 1px solid rgba(0,0,0,0.3) !important; outline: none !important; border-radius: 4px !important;}
+.otpBox input:focus{border: 1px solid rgba(0,0,0,0.7) !important;}
+.section .cont{height: 90hv; display:flex;}
+.MuiTableBody-root tr:nth-child(even){background: #f1f1f1 !important;}
+button .MuiCircularProgress-root{width: 30px !important;height: 30px !important;}
+.react-international-phone-input{width: 100% !important;}
+.react-international-phone-country-selector-button{width: 55px !important;}
+.react-international-phone-input-container{border: 1px solid rgba(0,0,0,0.1) !important;}

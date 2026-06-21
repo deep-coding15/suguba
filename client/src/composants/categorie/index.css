@@ -1,0 +1,80 @@
+@import "tailwindcss";
+
+/* ===== NAV GLOBAL ===== */
+.nav li {
+  position: relative;
+}
+
+/* ===== SUBMENU BASE ===== */
+.nav li .submenu {
+  position: absolute;
+  top: 120%;
+  left: 0;
+  min-width: 180px;
+  background: #fff;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+  z-index: 999;
+}
+
+/* ===== SHOW ON HOVER ===== */
+.nav li:hover > .submenu {
+  opacity: 1;
+  visibility: visible;
+  top: 100%;
+}
+
+/* ===== SUB-SUB MENU ===== */
+.nav li .submenu li .submenu {
+  top: 0;
+  left: 100%;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.nav li .submenu li:hover > .submenu {
+  opacity: 1;
+  visibility: visible;
+  left: 100%;
+}
+
+/* ===== BUTTON STYLE ===== */
+nav button {
+  color: rgba(0,0,0,0.85) !important;
+  font-weight: 500 !important;
+  text-transform: capitalize;
+  background: none !important;
+  transition: all 0.2s ease;
+}
+
+/* 🔥 HOVER ROSE PRINCIPAL */
+.nav li button:hover {
+  color: rgb(231, 116, 146) !important;
+  background: none !important;
+}
+
+/* 🔥 HOVER ITEMS SUBMENU */
+.nav li .submenu li button:hover {
+  color: rgb(231, 116, 146) !important;
+  background: rgba(231, 116, 146, 0.08) !important;
+}
+
+/* ===== LINK ===== */
+.link {
+  text-decoration: none;
+}
+
+/* OPTIONNEL (propre visuel) */
+.nav li .submenu li {
+  width: 100%;
+}
+.submenu {
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.submenu ul li button {
+  transition: all 0.2s ease;
+}
