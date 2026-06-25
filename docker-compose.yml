@@ -1,0 +1,52 @@
+services:
+
+  # ─────────────────────────────────────────
+  # API Express  (MongoDB Atlas, pas de service mongo local)
+  # ─────────────────────────────────────────
+  server:
+    build:
+      context: ./server
+    restart: unless-stopped
+    ports:
+      - "8000:8000"
+    env_file:
+      - ./.env
+    volumes:
+      - uploads:/app/uploads
+    networks:
+      - appnet
+
+  # ─────────────────────────────────────────
+  # Site client (vitrine)
+  # ─────────────────────────────────────────
+  client:
+    build:
+      context: ./client
+      args:
+        VITE_API_URL: ${CLIENT_VITE_API_URL}
+    restart: unless-stopped
+    ports:
+      - "3000:80"
+    networks:
+      - appnet
+
+  # ─────────────────────────────────────────
+  # Panneau admin
+  # ─────────────────────────────────────────
+  admin:
+    build:
+      context: ./admin
+      args:
+        VITE_API_URL: ${ADMIN_VITE_API_URL}
+    restart: unless-stopped
+    ports:
+      - "3001:80"
+    networks:
+      - appnet
+
+volumes:
+  uploads:
+
+networks:
+  appnet:
+    driver: bridge

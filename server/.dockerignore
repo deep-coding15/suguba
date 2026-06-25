@@ -1,0 +1,14 @@
+node_modules/
+uploads/
+.env
+*.log
+npm-debug.log*
+.git/
+.gitignore
+.vscode/
+.idea/
+*.swp
+.DS_Store
+Thumbs.db
+Dockerfile
+.dockerignore
