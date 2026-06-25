@@ -17,6 +17,8 @@ jobs:
         run: echo "${{ secrets.ENV_FILE }}" > .env
 
       - name: Build and deploy
+        env:
+          BUILDKIT_PROGRESS: plain
         run: docker compose up -d --build
 
       - name: Clean old Docker images
