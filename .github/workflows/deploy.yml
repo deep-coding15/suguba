@@ -20,6 +20,6 @@ jobs:
         env:
           BUILDKIT_PROGRESS: plain
         run: docker compose up -d --build
-
+        
       - name: Clean old Docker images
         run: docker image prune -f
